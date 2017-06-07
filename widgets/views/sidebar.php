@@ -94,10 +94,10 @@ use yii\widgets\Menu;
 
                             <ul>
                                 <li><a href="<?= Url::to(['/language/index']) ?>"
-                                       title="List User"><span><?=Translate::list()?> </span></a></li>
+                                       title="List User"><span><?=Translate::language()?> </span></a></li>
 
                                 <li><a href="<?= Url::to(['/language/phrase']) ?>"
-                                       title="Create user"><span><?=Translate::create()?></span></a>
+                                       title="Create user"><span><?=Translate::phrase()?></span></a>
 
                                 </li>
 
