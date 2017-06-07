@@ -34,7 +34,7 @@ use yii\widgets\Menu;
 
                             <ul>
                                 <li><a href="<?= Url::to(['/category/index']) ?>"
-                                       title="List User"><span><?=Translate::list()?> </span></a></li>
+                                       title="List User"><span><?=Translate::lists()?> </span></a></li>
 
                                 <li><a href="<?= Url::to(['/category/create']) ?>"
                                        title="Create user"><span><?=Translate::create()?></span></a>
@@ -54,7 +54,7 @@ use yii\widgets\Menu;
 
                             <ul>
                                 <li><a href="<?= Url::to(['/product/index']) ?>"
-                                       title="List User"><span><?=Translate::list()?> </span></a></li>
+                                       title="List User"><span><?=Translate::lists()?> </span></a></li>
 
                                 <li><a href="<?= Url::to(['/product/create']) ?>"
                                        title="Create user"><span><?=Translate::create()?></span></a>
@@ -74,7 +74,7 @@ use yii\widgets\Menu;
 
                             <ul>
                                 <li><a href="<?= Url::to(['/distributor/index']) ?>"
-                                       title="List User"><span><?=Translate::list()?> </span></a></li>
+                                       title="List User"><span><?=Translate::lists()?> </span></a></li>
 
                                 <li><a href="<?= Url::to(['/distributor/create']) ?>"
                                        title="Create user"><span><?=Translate::create()?></span></a>

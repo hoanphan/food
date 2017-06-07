@@ -27,6 +27,7 @@ use yii\web\UploadedFile;
  */
 class Product extends Model
 {
+    const PUBLISH=1;
     public $picture;
     /**
      * @inheritdoc

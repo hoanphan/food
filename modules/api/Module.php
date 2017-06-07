@@ -1,24 +1,21 @@
 <?php
-
-namespace app\module\api;
-
+namespace app\modules\api;
 /**
  * api module definition class
  */
-class Module extends \yii\base\Module
-{
-    /**
-     * @inheritdoc
-     */
-    public $controllerNamespace = 'app\module\api\controllers';
+class Module extends \yii\base\Module {
 
-    /**
-     * @inheritdoc
-     */
-    public function init()
-    {
-        parent::init();
+	/**
+	 * @inheritdoc
+	 */
+	public $controllerNamespace = 'app\modules\api\controllers';
 
-        // custom initialization code goes here
-    }
+	public $layout              = false;
+
+	/**
+	 * @inheritdoc
+	 */
+	public function init() {
+		parent::init();
+	}
 }
