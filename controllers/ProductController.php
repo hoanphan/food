@@ -7,6 +7,7 @@ use DateTime;
 use Yii;
 use app\models\Product;
 use app\models\searchs\ProductSearch;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -19,6 +20,16 @@ class ProductController extends Controller
     public function behaviors()
     {
         return [
+	        'access' => [
+		        'class' => AccessControl::className(),
+		        'rules' => [
+			        [
+				        'actions' => ['index', 'create','update','delete'],
+				        'allow' => true,
+				        'roles' => ['@'],
+			        ],
+		        ],
+	        ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
